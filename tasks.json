@@ -1,24 +1,36 @@
 {
-	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "C/C++: gcc build active file",
+			"label": "make all",
+			"type": "shell",
 			"command": "make",
 			"args": [
-				"all"
+				"all",
+				""
 			],
 			"options": {
 				"cwd": "${fileDirname}"
 			},
-			"problemMatcher": [
-				"$gcc"
-			],
 			"group": {
 				"kind": "build",
 				"isDefault": true
+			}
+		},
+		{
+			"label": "make clean",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"clean",
+				""
+			],
+			"options": {
+				"cwd": "${fileDirname}"
 			},
-			"detail": "compiler: /usr/bin/gcc"
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			}
 		}
 	]
 }
