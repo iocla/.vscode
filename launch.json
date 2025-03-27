@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": true,
       "externalConsole": false,
-      "cwd": "${currentFileDir}",
-      "program": "${currentFileDir}/hello",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/hello",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
